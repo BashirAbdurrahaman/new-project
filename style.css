@@ -1,10 +1,135 @@
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
-  background: #f5f7ff;
-  text-align: center;
-  padding-top: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 100px;
+}
+.div-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.div-logo p {
+  font-size: 32px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+nav ul li:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+nav ul li a:hover {
+  color: #FF760A;
 }
 
-h1 {
-  color: #1e40af;
+header button {
+  cursor: pointer;
+  color: white;
+  background-color: #FF760A;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+}
+header button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.home-section {
+  margin: 0 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.your-pathway {
+  margin-top: 100px;
+}
+.your-pathway h1 {
+  font-size: 58px;
+  color: #0F4BF9;
+  font-weight: lighter;
+}
+.your-pathway P{
+  font-size: 25px;
+  line-height: 35px;
+}
+.btn-get-onboard {
+  cursor: pointer;
+  color: white;
+  background-color: #FF760A;
+  border: none;
+  font-size: 20px;
+  padding: 16px 55px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.btn-get-onboard:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.btn-explore {
+  cursor: pointer;
+  color: #FF760A;
+  background-color: transparent;
+  border: 2px solid #FF760A;
+  font-size: 20px;
+  padding: 14px 30px;
+  border-radius: 8px;
+}
+.btn-explore:hover {
+  background-color: #FF760A;
+  color: white;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.section-moving-images{
+  background-color: #0F4BF9;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+}
+.section-moving-images p {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+.moving-images{
+  display: flex;
+  overflow: hidden;
+  background-color: white;
+  margin: 0 100px;
+  justify-content: space-between;
+  padding: 30px 20px;
+  border-radius: 8px;
+}
+
+.moving-images img {
+  animation: move 10s linear infinite;
+}
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
