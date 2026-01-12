@@ -202,7 +202,12 @@ transform:translateX(0);
   height:auto; 
   max-height:18.75rem; 
   display:block;
- }
+  position: absolute;
+  z-index: 0;
+ }  
+ .shape-wrapper svg{ 
+  top: 1350px; 
+  }
 .shape-wrapper.opposite, 
 .shape-wrapper-opposite{ 
   margin-top:2.5rem;
@@ -238,4 +243,16 @@ transform:translateX(0);
   max-width:100%; 
   height:auto; 
   width:80%;
+ }
+ .section-svg{ 
+  text-align: right; 
+  padding-top:50px;
+  padding-right: 70px;
+ }
+ .section-svg img{
+  width:100%; 
+  height:auto; 
+  /* display:block; 
+  margin:0 auto;  */
+  max-width:50rem;
  }
